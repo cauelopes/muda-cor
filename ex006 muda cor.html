@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muda cor 2</title>
+    <style>
+         body{ background-color: rgb(77, 72, 66);}
+
+         div{
+            margin: 20px;
+        }
+         .center{
+            text-align: center;
+         }
+         .tela{
+            color: white;
+            height: 200px;
+            font-size: 80px;
+            background-color: grey;
+            margin-top: 0;
+         }
+         .cores{
+            padding: 5px;
+            border: 3px solid yellow;
+            cursor: pointer;
+         }
+         p{
+            color: white;
+            text-align: center; 
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="tela">
+            <p class="tela" id="demo" onmouseenter="myFunction()" onmouseout="minhaF()">Aqui vai mudar!</p>
+        </div><!--tela-->
+
+    </div><!--center-->
+<div class="container"> 
+    <Div  class="cores" id="demos" onclick="myFunctions()">
+        <p > Azul</p>
+    </Div><!--cor-->
+
+    <Div  class="cores" id="demos" onclick="myFunctionss()">
+        <p > Verde</p>
+    </Div><!--cor-->
+
+    <Div  class="cores" id="demos" onclick="myFunctionsss()">
+        <p > amarelo</p>
+    </Div><!--cor-->
+
+    <Div  class="cores" id="demos" onclick="myFunctionssss()">
+        <p >Preto</p>
+    </Div><!--cor-->
+
+    <Div  class="cores" id="demos" onclick="myFunctionsssss()">
+        <p >roxo</p>
+    </Div><!--cor-->
+
+</div><!--container-->
+    <script>
+        function myFunction() {
+        document.getElementById("demo").style.backgroundColor = "red";
+        }
+        function myFunctions() {
+        document.getElementById("demo").style.backgroundColor = "blue";
+        }
+        function myFunctionss() {
+        document.getElementById("demo").style.backgroundColor = "green";
+        }
+        function myFunctionsss() {
+        document.getElementById("demo").style.backgroundColor = "yellow";
+        }
+        function myFunctionssss() {
+        document.getElementById("demo").style.backgroundColor = "black";
+        }
+        function myFunctionsssss() {
+        document.getElementById("demo").style.backgroundColor = "purple";
+        }
+        function minhaF() {
+        document.getElementById("demo").style.backgroundColor = "grey";
+        }
+        
+    </script>
+</body>
+</html>
